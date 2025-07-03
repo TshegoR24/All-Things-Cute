@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Things Cute - Sweet Dreams Start Here</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-bar__content">
+            <span><i class="fas fa-shipping-fast"></i> Free shipping on orders over R500</span>
+            <span>🇿🇦 🇳🇬 Now shipping to South Africa & Nigeria</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <h1 class="nav__brand">All Things Cute</h1>
+                <ul class="nav__menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav__actions">
+                    <button aria-label="Search"><i class="fas fa-search"></i></button>
+                    <button aria-label="Wishlist"><i class="fas fa-heart"></i></button>
+                    <button aria-label="Cart" id="cartBtn"><i class="fas fa-shopping-bag"></i><span>0</span></button>
+                    <button class="nav__mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h2>Sweet Dreams Start Here</h2>
+                    <p>Discover the coziest, most stylish sleepwear that makes every night feel like a dream</p>
+                    <div class="hero__buttons">
+                        <a href="#shop" class="btn btn--primary"><i class="fas fa-star"></i> Shop Now</a>
+                        <a href="#about" class="btn btn--secondary"><i class="fas fa-heart"></i> Learn More</a>
+                    </div>
+                </div>
+                <div class="hero__images">
+                    <div class="hero__image-grid">
+                        <div class="hero__image hero__image--main">
+                            <div class="hero__image-placeholder">
+                                <i class="fas fa-bed"></i>
+                                <p>Dreamy Pajama Set</p>
+                            </div>
+                        </div>
+                        <div class="hero__image hero__image--secondary">
+                            <div class="hero__image-placeholder">
+                                <i class="fas fa-moon"></i>
+                                <p>Cozy Nightgown</p>
+                            </div>
+                        </div>
+                        <div class="hero__image hero__image--tertiary">
+                            <div class="hero__image-placeholder">
+                                <i class="fas fa-star"></i>
+                                <p>Silky Robe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Categories -->
+        <section class="categories">
+            <div class="container">
+                <h3 class="section-title">Shop by Category</h3>
+                <div class="categories__grid">
+                    <div class="category-card">
+                        <div class="category-card__image">
+                            <div class="category-card__placeholder">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                        </div>
+                        <h4 class="category-card__title">Pajama Sets</h4>
+                        <p class="category-card__description">Matching tops & bottoms</p>
+                        <a href="#shop" class="category-card__link">Shop Now</a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-card__image">
+                            <div class="category-card__placeholder">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                        </div>
+                        <h4 class="category-card__title">Nightgowns</h4>
+                        <p class="category-card__description">Elegant & comfortable</p>
+                        <a href="#shop" class="category-card__link">Shop Now</a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-card__image">
+                            <div class="category-card__placeholder">
+                                <i class="fas fa-blanket"></i>
+                            </div>
+                        </div>
+                        <h4 class="category-card__title">Robes</h4>
+                        <p class="category-card__description">Luxurious loungewear</p>
+                        <a href="#shop" class="category-card__link">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products" id="shop">
+            <div class="container">
+                <h3 class="section-title">Our Coziest Collection</h3>
+                <div class="products__grid">
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <div class="product-card__placeholder">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                            <span class="product-card__tag product-card__tag--bestseller">Best Seller</span>
+                            <div class="product-card__actions">
+                                <button class="product-card__action" aria-label="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="product-card__action" aria-label="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <h4 class="product-card__title">Dreamy Floral Pajama Set</h4>
+                            <p class="product-card__price">R450</p>
+                            <button class="btn btn--small">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <div class="product-card__placeholder">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                            <span class="product-card__tag product-card__tag--new">New</span>
+                            <div class="product-card__actions">
+                                <button class="product-card__action" aria-label="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="product-card__action" aria-label="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <h4 class="product-card__title">Silky Satin Nightgown</h4>
+                            <p class="product-card__price">R380</p>
+                            <button class="btn btn--small">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <div class="product-card__placeholder">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                            <span class="product-card__tag product-card__tag--cozy">Cozy Pick</span>
+                            <div class="product-card__actions">
+                                <button class="product-card__action" aria-label="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="product-card__action" aria-label="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <h4 class="product-card__title">Soft Cotton Pajama Set</h4>
+                            <p class="product-card__price">R420</p>
+                            <button class="btn btn--small">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <div class="product-card__placeholder">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                            <div class="product-card__actions">
+                                <button class="product-card__action" aria-label="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="product-card__action" aria-label="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <h4 class="product-card__title">Lace Trim Robe</h4>
+                            <p class="product-card__price">R520</p>
+                            <button class="btn btn--small">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <div class="product-card__placeholder">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                            <span class="product-card__tag product-card__tag--bestseller">Best Seller</span>
+                            <div class="product-card__actions">
+                                <button class="product-card__action" aria-label="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="product-card__action" aria-label="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <h4 class="product-card__title">Pastel Striped Pajamas</h4>
+                            <p class="product-card__price">R480</p>
+                            <button class="btn btn--small">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <div class="product-card__placeholder">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                            <span class="product-card__tag product-card__tag--new">New</span>
+                            <div class="product-card__actions">
+                                <button class="product-card__action" aria-label="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="product-card__action" aria-label="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <h4 class="product-card__title">Velvet Sleep Set</h4>
+                            <p class="product-card__price">R580</p>
+                            <button class="btn btn--small">Add to Cart</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Section -->
+        <section class="instagram">
+            <div class="container">
+                <div class="instagram__header">
+                    <h3 class="section-title">Follow Our Dreams</h3>
+                    <p class="instagram__subtitle">Get inspired by our community of dreamers</p>
+                    <a href="https://instagram.com/allthingscut8" class="instagram__handle" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                        @allthingscut8
+                    </a>
+                </div>
+                <div class="instagram__grid">
+                    <div class="instagram__item">
+                        <div class="instagram__placeholder">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="instagram__item">
+                        <div class="instagram__placeholder">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="instagram__item">
+                        <div class="instagram__placeholder">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="instagram__item">
+                        <div class="instagram__placeholder">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="instagram__item">
+                        <div class="instagram__placeholder">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="instagram__item">
+                        <div class="instagram__placeholder">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h4 class="footer__title">All Things Cute</h4>
+                    <p class="footer__description">Making every night a sweet dream with the coziest sleepwear for women in South Africa and Nigeria.</p>
+                    <div class="footer__social">
+                        <a href="https://instagram.com/allthingscut8" class="footer__social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://instagram.com/the_zyzy" class="footer__social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__title">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="#shop" class="footer__link">Shop</a></li>
+                        <li><a href="#about" class="footer__link">About Us</a></li>
+                        <li><a href="#" class="footer__link">Size Guide</a></li>
+                        <li><a href="#" class="footer__link">Shipping Info</a></li>
+                        <li><a href="#" class="footer__link">Returns</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__title">Customer Care</h4>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Contact Us</a></li>
+                        <li><a href="#" class="footer__link">FAQ</a></li>
+                        <li><a href="#" class="footer__link">Track Order</a></li>
+                        <li><a href="#" class="footer__link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__title">Stay Cozy</h4>
+                    <p class="footer__newsletter-text">Get cozy deals and dreamier sleepwear in your inbox 💌</p>
+                    <form class="footer__newsletter">
+                        <input type="email" class="footer__newsletter-input" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn--small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2024 All Things Cute. All rights reserved.</p>
+                <div class="footer__flags">
+                    <span>🇿🇦 South Africa</span>
+                    <span>🇳🇬 Nigeria</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-sidebar__header">
+            <h3 class="cart-sidebar__title">Shopping Cart</h3>
+            <button class="cart-sidebar__close" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-sidebar__content">
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-sidebar__empty" id="cartEmpty">
+                <i class="fas fa-shopping-bag"></i>
+                <p>Your cart is empty</p>
+                <span>Add some cozy sleepwear to get started!</span>
+            </div>
+        </div>
+        <div class="cart-sidebar__footer">
+            <div class="cart-total">
+                <span>Subtotal:</span>
+                <span class="cart-total__amount">R0</span>
+            </div>
+            <div class="cart-shipping">
+                <span>Shipping:</span>
+                <span class="cart-shipping__amount">Free</span>
+            </div>
+            <div class="cart-grand-total">
+                <span>Total:</span>
+                <span class="cart-grand-total__amount">R0</span>
+            </div>
+            <button class="btn btn--primary cart-checkout" disabled>
+                <i class="fas fa-lock"></i>
+                Secure Checkout
+            </button>
+        </div>
+    </div>
+    
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Product Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal__content">
+            <button class="modal__close" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal__body">
+                <div class="product-quick-view">
+                    <div class="product-quick-view__images">
+                        <div class="product-quick-view__main-image">
+                            <div class="product-quick-view__placeholder">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                        </div>
+                        <div class="product-quick-view__thumbnails">
+                            <div class="product-quick-view__thumbnail active">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                            <div class="product-quick-view__thumbnail">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                            <div class="product-quick-view__thumbnail">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-quick-view__details">
+                        <h3 class="product-quick-view__title">Dreamy Floral Pajama Set</h3>
+                        <p class="product-quick-view__price">R450</p>
+                        <div class="product-quick-view__description">
+                            <p>Ultra-soft, breathable fabric perfect for a peaceful night's sleep. Features a beautiful floral pattern and comfortable elastic waistband.</p>
+                        </div>
+                        <div class="product-quick-view__options">
+                            <div class="product-option">
+                                <label>Size:</label>
+                                <div class="product-option__choices">
+                                    <button class="product-option__choice">S</button>
+                                    <button class="product-option__choice active">M</button>
+                                    <button class="product-option__choice">L</button>
+                                    <button class="product-option__choice">XL</button>
+                                </div>
+                            </div>
+                            <div class="product-option">
+                                <label>Color:</label>
+                                <div class="product-option__choices">
+                                    <button class="product-option__choice active" style="background: #ffd6e8;">Pink</button>
+                                    <button class="product-option__choice" style="background: #e6f3ff;">Blue</button>
+                                    <button class="product-option__choice" style="background: #f0f8f0;">Mint</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-quick-view__quantity">
+                            <label>Quantity:</label>
+                            <div class="quantity-selector">
+                                <button class="quantity-selector__btn" id="decreaseQty">-</button>
+                                <input type="number" class="quantity-selector__input" value="1" min="1" max="10">
+                                <button class="quantity-selector__btn" id="increaseQty">+</button>
+                            </div>
+                        </div>
+                        <div class="product-quick-view__actions">
+                            <button class="btn btn--primary">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                            <button class="btn btn--secondary">
+                                <i class="fas fa-heart"></i>
+                                Add to Wishlist
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__header">
+            <h3 class="mobile-menu__title">All Things Cute</h3>
+            <button class="mobile-menu__close" id="closeMobileMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+                <li><a href="#home" class="mobile-menu__link">Home</a></li>
+                <li><a href="#shop" class="mobile-menu__link">Shop</a></li>
+                <li><a href="#about" class="mobile-menu__link">About</a></li>
+                <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu__actions">
+            <button class="mobile-menu__action">
+                <i class="fas fa-search"></i>
+                Search
+            </button>
+            <button class="mobile-menu__action">
+                <i class="fas fa-heart"></i>
+                Wishlist
+            </button>
+            <button class="mobile-menu__action" id="mobileCartBtn">
+                <i class="fas fa-shopping-bag"></i>
+                Cart <span class="mobile-cart-count">0</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
