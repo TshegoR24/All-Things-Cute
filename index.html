@@ -33,16 +33,16 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="nav__actions">
-                    <button aria-label="Search"><i class="fas fa-search"></i></button>
-                    <button aria-label="Wishlist"><i class="fas fa-heart"></i></button>
-                    <button aria-label="Cart" id="cartBtn"><i class="fas fa-shopping-bag"></i><span>0</span></button>
-                    <button class="nav__mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
+            </div>
+            <div class="nav__actions">
+                <button aria-label="Search"><i class="fas fa-search"></i></button>
+                <button aria-label="Wishlist"><i class="fas fa-heart"></i></button>
+                <button aria-label="Cart" id="cartBtn"><i class="fas fa-shopping-bag"></i><span>0</span></button>
+                <button class="nav__mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </nav>
     </header>
@@ -52,34 +52,15 @@
         <section class="hero" id="home">
             <div class="hero__container">
                 <div class="hero__content">
-                    <h2>Sweet Dreams Start Here 💖</h2>
+                    <h2>Where Cute Meets Cozy 💖</h2>
                     <p>Discover the coziest, most stylish sleepwear that makes every night feel like a dream</p>
                     <div class="hero__buttons">
-                        <a href="#shop" class="btn btn--primary"><i class="fas fa-star"></i> Shop Now</a>
+                        <a href="#shop" class="btn btn--primary"><i class="fas fa-star"></i> Shop the Collection</a>
                         <a href="#about" class="btn btn--secondary"><i class="fas fa-heart"></i> Learn More</a>
                     </div>
                 </div>
-                <div class="hero__images">
-                    <div class="hero__image-grid">
-                        <div class="hero__image hero__image--main">
-                            <div class="hero__image-placeholder">
-                                <i class="fas fa-bed"></i>
-                                <p>Dreamy Pajama Set</p>
-                            </div>
-                        </div>
-                        <div class="hero__image hero__image--secondary">
-                            <div class="hero__image-placeholder">
-                                <i class="fas fa-moon"></i>
-                                <p>Cozy Nightgown</p>
-                            </div>
-                        </div>
-                        <div class="hero__image hero__image--tertiary">
-                            <div class="hero__image-placeholder">
-                                <i class="fas fa-star"></i>
-                                <p>Silky Robe</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="hero__image-main">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" alt="Cozy Pajama Model" class="hero__img-soft" />
                 </div>
             </div>
             <!-- Floating decorative elements -->
@@ -91,6 +72,9 @@
                 <div class="floating-element floating-element--sparkle2">✨</div>
             </div>
         </section>
+
+        <!-- Decorative divider -->
+        <div class="section-divider" style="margin-bottom: 2.5rem;"><div class="divider-dots">• • • • •</div></div>
 
         <!-- Categories Section -->
         <section class="categories">
@@ -142,6 +126,11 @@
             <div class="sparkle sparkle--4">✨</div>
         </section>
 
+        <!-- Decorative divider -->
+        <div class="section-divider">
+            <div class="divider-dots">• • • • •</div>
+        </div>
+
         <!-- Products Section -->
         <section class="products" id="shop">
             <div class="container">
@@ -152,7 +141,7 @@
                             <div class="product-card__placeholder">
                                 <i class="fas fa-bed"></i>
                             </div>
-                            <span class="product-card__tag product-card__tag--bestseller">Bestseller</span>
+                            <span class="product-card__tag product-card__tag--bestseller">Best Seller</span>
                             <div class="product-card__actions">
                                 <button class="product-card__action" aria-label="Add to Wishlist">
                                     <i class="fas fa-heart"></i>
@@ -173,7 +162,7 @@
                             <div class="product-card__placeholder">
                                 <i class="fas fa-bed"></i>
                             </div>
-                            <span class="product-card__tag product-card__tag--new">So Soft</span>
+                            <span class="product-card__tag product-card__tag--new">New</span>
                             <div class="product-card__actions">
                                 <button class="product-card__action" aria-label="Add to Wishlist">
                                     <i class="fas fa-heart"></i>
@@ -194,7 +183,7 @@
                             <div class="product-card__placeholder">
                                 <i class="fas fa-bed"></i>
                             </div>
-                            <span class="product-card__tag product-card__tag--cozy">So Soft</span>
+                            <span class="product-card__tag product-card__tag--cozy">Cozy Pick</span>
                             <div class="product-card__actions">
                                 <button class="product-card__action" aria-label="Add to Wishlist">
                                     <i class="fas fa-heart"></i>
@@ -236,7 +225,7 @@
                             <div class="product-card__placeholder">
                                 <i class="fas fa-bed"></i>
                             </div>
-                            <span class="product-card__tag product-card__tag--bestseller">Bestseller</span>
+                            <span class="product-card__tag product-card__tag--bestseller">Best Seller</span>
                             <div class="product-card__actions">
                                 <button class="product-card__action" aria-label="Add to Wishlist">
                                     <i class="fas fa-heart"></i>
@@ -257,7 +246,7 @@
                             <div class="product-card__placeholder">
                                 <i class="fas fa-bed"></i>
                             </div>
-                            <span class="product-card__tag product-card__tag--new">Staff Pick</span>
+                            <span class="product-card__tag product-card__tag--new">New</span>
                             <div class="product-card__actions">
                                 <button class="product-card__action" aria-label="Add to Wishlist">
                                     <i class="fas fa-heart"></i>
@@ -282,12 +271,17 @@
             <div class="sparkle sparkle--4">💫</div>
         </section>
 
+        <!-- Decorative divider -->
+        <div class="section-divider">
+            <div class="divider-dots">• • • • •</div>
+        </div>
+
         <!-- Instagram Section -->
         <section class="instagram">
             <div class="container">
                 <div class="instagram__header">
                     <h3 class="section-title">From the Gram 📸</h3>
-                    <p class="instagram__subtitle">Get inspired by our community of dreamers</p>
+                    <p class="instagram__subtitle">Follow us @allthingscut8 for style inspo and cozy vibes</p>
                     <a href="https://instagram.com/allthingscut8" class="instagram__handle" target="_blank" rel="noopener">
                         <i class="fab fa-instagram"></i>
                         @allthingscut8
@@ -396,11 +390,17 @@
         </div>
     </footer>
 
-    <!-- Shopping Cart Sidebar -->
+    <!-- Floating Cart Icon -->
+    <div class="floating-cart" id="floatingCart">
+        <i class="fas fa-shopping-bag"></i>
+        <div class="cart-badge" id="cartBadge">0</div>
+    </div>
+
+    <!-- Cart Sidebar -->
     <div class="cart-sidebar" id="cartSidebar">
         <div class="cart-sidebar__header">
             <h3 class="cart-sidebar__title">Shopping Cart</h3>
-            <button class="cart-sidebar__close" id="closeCart">
+            <button class="cart-sidebar__close" id="cartClose">
                 <i class="fas fa-times"></i>
             </button>
         </div>

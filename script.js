@@ -492,6 +492,44 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(sparkleStyle);
 
+    // Floating cart functionality
+    const floatingCart = document.getElementById('floatingCart');
+    const cartBadge = document.getElementById('cartBadge');
+    const cartClose = document.getElementById('cartClose');
+
+    // Open cart sidebar
+    floatingCart.addEventListener('click', () => {
+        cartSidebar.classList.add('cart-sidebar--open');
+        cartOverlay.classList.add('cart-overlay--active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Close cart sidebar
+    cartClose.addEventListener('click', () => {
+        cartSidebar.classList.remove('cart-sidebar--open');
+        cartOverlay.classList.remove('cart-overlay--active');
+        document.body.style.overflow = '';
+    });
+
+    cartOverlay.addEventListener('click', () => {
+        cartSidebar.classList.remove('cart-sidebar--open');
+        cartOverlay.classList.remove('cart-overlay--active');
+        document.body.style.overflow = '';
+    });
+
+    // Update cart badge count
+    function updateCartBadge(count) {
+        cartBadge.textContent = count;
+        if (count > 0) {
+            cartBadge.style.display = 'flex';
+        } else {
+            cartBadge.style.display = 'none';
+        }
+    }
+
+    // Initialize cart badge
+    updateCartBadge(0);
+
     // Initialize everything
     updateCartDisplay();
     addSparkles();
